@@ -1848,16 +1848,16 @@ img {
     line-height: auto;
   }
   .recommend__item_width {
-    width: 600px;
+    width: 500px;
     height: 485px;
   }
   .recommend__item_width .recommend__item-brand {
     position: relative;
     z-index: 10;
-    width: 200px;
+    width: 150px;
     margin-top: 200px;
     margin-bottom: 20px;
-    margin-left: 290px;
+    margin-left: 250px;
     padding: 0;
     font-size: 20px;
     line-height: auto;
@@ -1865,9 +1865,9 @@ img {
   .recommend__item_width .recommend__item-title {
     position: relative;
     z-index: 10;
-    width: 200px;
+    width: 150px;
     margin-top: 0;
-    margin-left: 290px;
+    margin-left: 250px;
     padding: 0;
     font-size: 30px;
     line-height: auto;
@@ -1875,9 +1875,9 @@ img {
   .recommend__item_width .recommend__item-text {
     position: relative;
     z-index: 10;
-    width: 300px;
+    width: 250px;
     margin-top: 20px;
-    margin-left: 290px;
+    margin-left: 250px;
     padding: 0;
     font-size: 16px;
     line-height: auto;
