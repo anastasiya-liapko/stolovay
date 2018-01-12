@@ -2660,8 +2660,6 @@ img {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 81%;
     margin: 0 auto;
   }
@@ -2676,8 +2674,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -2685,13 +2681,14 @@ img {
     height: auto;
     background-color: #34a853;
     border-radius: 0;
+    overflow: hidden;
   }
   .user__menu-button {
     display: none;
   }
   .user__menu-item {
     display: block;
-    padding: 15px 0;
+    padding: 15px 2px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2699,16 +2696,17 @@ img {
     color: #ffffff;
     background-color: #34a853;
     text-decoration: none;
+    white-space: nowrap;
   }
   .user__mail {
     position: relative;
     -ms-flex-item-align: center;
         align-self: center;
     display: block;
-    width: 160px;
+    width: 150px;
     height: auto;
-    margin-left: 50px;
-    margin-right: 20px;
+    margin: 0;
+    padding: 0 10px;
     color: #ffffff;
     background-color: #34a853;
   }
@@ -2762,7 +2760,8 @@ img {
         align-self: center;
     width: 140px;
     height: auto;
-    padding-left: 25px;
+    margin: 0;
+    padding: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2770,11 +2769,13 @@ img {
     color: #ffffff;
     background-color: #34a853;
     cursor: pointer;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .user__phone-text {
     position: relative;
     display: block;
-    width: 160px;
+    width: 150px;
     padding-top: 15px;
     padding-left: 35px;
     padding-bottom: 15px;
@@ -2963,18 +2964,22 @@ img {
     background-position: center;
   }
   .user__logo {
+    min-width: 10px;
+    height: 50px;
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
     margin-left: 0;
-    margin-right: 50px;
     padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    overflow: hidden;
   }
   .user__logo::before {
-    top: -2px;
+    top: 5px;
     left: 5px;
     width: 40px;
-    height: 40px;
+    height: 50px;
     background-image: url("../img/logo-header-1920.png");
   }
   .user__logo-text {
@@ -3026,6 +3031,7 @@ img {
     background-color: #f3f1f1;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    overflow: hidden;
   }
   .user__search-sort::after {
     content: "▼";
@@ -3042,6 +3048,7 @@ img {
             flex-grow: 1;
     display: block;
     width: auto;
+    min-width: 50px;
     height: 33px;
     border: none;
   }
@@ -3075,10 +3082,11 @@ img {
         align-self: center;
     position: relative;
     display: block;
-    width: 170px;
+    min-width: 150px;
+    max-width: 150px;
     height: 35px;
-    margin-top: 10px;
-    margin-left: 50px;
+    margin-top: 3px;
+    margin-left: 20px;
     padding-left: 40px;
     font-style: normal;
     font-weight: 300;
@@ -3104,10 +3112,9 @@ img {
     -ms-flex-item-align: center;
         align-self: center;
     position: relative;
-    width: 140px;
-    margin-left: 30px;
+    min-width: 140px;
     height: 35px;
-    margin-top: 10px;
+    margin-top: 3px;
     padding-left: 45px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
