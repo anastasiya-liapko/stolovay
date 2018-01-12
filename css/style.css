@@ -97,7 +97,8 @@ img {
   background-color: #f3f1f1;
 }
 .brands__wrapper {
-  width: 320px;
+  width: 81%;
+  min-width: 320px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,15 +178,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.brands__item:nth-child(2n+1)::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 1px;
-  width: 1px;
-  height: 50px;
-  background-color: #f3f1f1;
-}
 .brands__item_text {
   display: inline-block;
   padding-top: 20px;
@@ -204,7 +196,8 @@ img {
   background-color: #f3f1f1;
 }
 .offers__wrapper {
-  width: 320px;
+  width: 81%;
+  min-width: 320px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -316,7 +309,7 @@ img {
 }
 .special__title {
   display: block;
-  min-width: 320px;
+  width: 100%;
   min-height: 40px;
   margin: 0 auto;
   padding-top: 10px;
@@ -326,6 +319,7 @@ img {
   font-size: 17.07px;
   line-height: 17.07px;
   color: #000000;
+  text-align: center;
   background-color: #ffffff;
   text-decoration: none;
   -webkit-box-sizing: border-box;
@@ -334,32 +328,32 @@ img {
 .special__item {
   position: relative;
   display: block;
-  width: auto;
+  width: 100%;
   min-width: 320px;
   height: 144px;
   margin: 1px auto;
-  padding-left: 160px;
   background-color: #ffffff;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.special__item::before {
+.special__item-name::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 0;
+  top: -40px;
+  right: 100%;
   width: 148px;
   height: 130px;
+  margin-left: -75px;
   background-image: url("../img/equipment-2.png");
   background-repeat: no-repeat;
   background-position: left;
 }
-.special__item::after {
+.special__item-name::after {
   content: "";
   position: absolute;
-  top: 108px;
-  left: 155px;
+  top: 70px;
+  left: -5px;
   width: 56px;
   height: 17px;
   background-image: url("../img/brand-small.png");
@@ -367,9 +361,12 @@ img {
   background-position: center;
 }
 .special__item-name {
+  position: relative;
+  top: 40px;
+  left: 65%;
   display: inline-block;
   width: 105px;
-  padding-top: 45px;
+  margin-left: -50px;
   padding-bottom: 10px;
   font-style: normal;
   font-weight: 300;
@@ -379,8 +376,12 @@ img {
   background-color: #ffffff;
 }
 .special__item-price {
+  position: relative;
+  top: 50px;
+  left: 65%;
   display: block;
   width: 105px;
+  margin-left: -50px;
   font-style: normal;
   font-weight: 700;
   font-size: 12.8px;
@@ -391,10 +392,11 @@ img {
 .special__flag {
   position: relative;
   top: 18px;
-  left: 0;
+  left: 65%;
   display: block;
   width: 20px;
   height: 4px;
+  margin-left: -50px;
   background-color: #003ff9;
 }
 .special__flag::before {
@@ -426,7 +428,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
+  width: 81%;
+  min-width: 320px;
   margin: 0 auto;
 }
 .recommend__item-wrapper {
@@ -444,23 +447,24 @@ img {
 }
 .recommend__descr {
   position: relative;
-  width: 295px;
+  width: 100%;
+  min-width: 295px;
   height: 170px;
   margin: 0 auto;
-  background-color: #ffffff;
+  text-align: center;
+  background-color: #f3f1f1;
 }
 .recommend__descr-title {
   display: inline-block;
   width: 100%;
   margin-top: 55px;
   margin-bottom: 15px;
-  padding-left: 85px;
   font-style: normal;
   font-weight: 400;
   font-size: 21.34px;
   line-height: 21.34px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f3f1f1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -473,7 +477,7 @@ img {
   font-size: 12.8px;
   line-height: 12.8px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f3f1f1;
   text-align: center;
 }
 .recommend__item {
@@ -534,7 +538,7 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: 210px;
+  right: 10px;
   width: 73px;
   height: 175px;
   background-image: url("../img/equipment-4.png");
@@ -545,7 +549,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: 190px;
+  right: 0;
   width: 107px;
   height: 205px;
   background-image: url("../img/equipment-5.png");
@@ -556,7 +560,7 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: 210px;
+  right: 10px;
   width: 73px;
   height: 175px;
   background-image: url("../img/equipment-4.png");
@@ -578,7 +582,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: 190px;
+  right: 0;
   width: 107px;
   height: 205px;
   background-image: url("../img/equipment-5.png");
@@ -649,28 +653,32 @@ img {
   background-color: #f3f1f1;
 }
 .clients__wrapper {
-  width: 320px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 81%;
+  min-width: 320px;
   min-height: 620px;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .clients__title {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 100px;
   padding-top: 55px;
-  padding-left: 90px;
   font-style: normal;
   font-weight: 400;
   font-size: 21.34px;
   line-height: auto;
   color: #191919;
+  text-align: center;
   background-color: #f3f1f1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -786,13 +794,15 @@ img {
 }
 .clients__button {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 125px;
-  padding-left: 125px;
+  text-align: center;
   text-decoration: none;
 }
 .clients__more {
-  margin-left: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
 }
 .clients__text {
   font-style: normal;
@@ -829,9 +839,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: auto;
+  width: 81%;
+  min-width: 320px;
   min-height: 40px;
+  margin: 0 auto;
   padding: 5px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 1px solid #f3f1f1;
 }
 .user__wrapper-grey {
@@ -1106,7 +1120,8 @@ img {
   background-color: #f3f1f1;
 }
 .sale__wrapper {
-  width: 320px;
+  width: 81%;
+  min-width: 320px;
   min-width: 295px;
   min-height: 202px;
   margin: 0 auto;
@@ -1324,8 +1339,10 @@ img {
   background-color: #191919;
 }
 .info__wrapper {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .info__logo {
   position: relative;
@@ -1566,15 +1583,6 @@ img {
     width: 161px;
     height: 65px;
   }
-  .brands__item::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 200px;
-    width: 1px;
-    height: 50px;
-    background-color: #f3f1f1;
-  }
   .brands__item:nth-child(6)::after {
     display: none;
   }
@@ -1655,7 +1663,7 @@ img {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    width: 370px;
+    width: 600px;
     min-height: 270px;
   }
   .special__title {
@@ -1678,16 +1686,16 @@ img {
     padding: 0;
     padding-top: 100px;
   }
-  .special__item::before {
-    top: 300px;
+  .special__item-name::before {
+    top: 200px;
     left: 50%;
     width: 50px;
     height: 30px;
     margin-left: -25px;
     background-image: url("../img/brand-small-desktop.png");
   }
-  .special__item::after {
-    top: 70px;
+  .special__item-name::after {
+    top: -50px;
     left: 50%;
     width: 150px;
     height: 180px;
@@ -1695,6 +1703,8 @@ img {
     background-image: url("../img/offers-1.png");
   }
   .special__item-name {
+    left: 0;
+    top: 0;
     display: block;
     width: 180px;
     margin: 0;
@@ -1708,6 +1718,8 @@ img {
     text-align: left;
   }
   .special__item-price {
+    left: 0;
+    top: 0;
     display: block;
     width: 120px;
     margin-top: 0;
@@ -1719,6 +1731,7 @@ img {
   .special__flag {
     top: 145px;
     left: 50%;
+    z-index: 10;
     width: 11px;
     height: 3px;
     margin-left: -5px;
@@ -2095,9 +2108,6 @@ img {
         flex-wrap: wrap;
     width: 81%;
     padding-top: 120px;
-  }
-  .clients__wrapper {
-    width: 970px;
   }
   .clients {
     min-height: 580px;
@@ -2626,6 +2636,7 @@ img {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    width: 100%;
     min-height: 110px;
     padding: 0;
   }
@@ -3541,9 +3552,6 @@ img {
     line-height: 16px;
     color: #ffffff;
     background-color: #282828;
-  }
-  .info__wrapper {
-    width: 970px;
   }
   .info {
     min-height: 75px;
